@@ -1,0 +1,36 @@
+------------------------------------------------------------
+PREPROCESSING LOG
+------------------------------------------------------------
+Source file: /content/Motor_Vehicle_Collisions_-_Crashes_20261016.csv
+Columns used: CRASH DATE, NUMBER OF PEDESTRIANS INJURED, NUMBER OF CYCLIST INJURED, NUMBER OF MOTORIST INJURED
+Records loaded: 2,269,187
+
+[Dates]
+Records with missing or invalid dates removed: 0
+Records outside 2016-03-01 to 2025-12-31 removed: 798,550
+Records remaining: 1,470,637
+
+[Injury counts]  (bad values set to missing for that group only)
+Group          Missing   Invalid  Negative  Total bad   % bad
+pedestrians          0         0         0          0   0.00%
+cyclists             0         0         0          0   0.00%
+motorists            0         0         0          0   0.00%
+Records with no valid injury count in any group: 0
+
+[Weekly aggregation]
+Partial weeks at the start/end of the period dropped: 2
+Weeks in final dataset: 512 (2016-03-13 to 2025-12-28)
+All weeks have records on all 7 days.
+
+[Indicators]
+Holiday weeks (U.S. federal holidays): 102
+COVID-period weeks (2020-03-01 to 2021-06-30): 71
+
+[Consistency checks]
+pedestrians  records:     92,822   weekly sum:     92,822   OK
+cyclists     records:     50,428   weekly sum:     50,428   OK
+motorists    records:    388,657   weekly sum:    388,657   OK
+No missing weeks in the index: OK
+No negative weekly totals: OK
+
+ALL CHECKS PASSED
