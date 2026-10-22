@@ -2,7 +2,7 @@ import pandas as pd
 from pandas.tseries.holiday import USFederalHolidayCalendar
 
 # ---- Settings ---------------------------------------------------------------
-PATH = "DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv"  # download from NYC Open Data (see DATA/README.md)
+PATH = "../DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv"  # download from NYC Open Data (see DATA/README.md)
 
 START_DATE = "2016-03-01"   # FORMS electronic reporting began March 2016
 END_DATE = "2025-12-31"     # 2026 data is excluded; the test period is the final 12 weeks of 2025
@@ -10,8 +10,8 @@ END_DATE = "2025-12-31"     # 2026 data is excluded; the test period is the fina
 COVID_START = "2020-03-01"  # COVID-19 disruption period (MI2: March 2020 to mid-2021)
 COVID_END = "2021-06-30"
 
-OUTPUT_FILE = "DATA/weekly_injuries_processed.csv"
-LOG_FILE = "OUTPUT/preprocessing_log.txt"
+OUTPUT_FILE = "../DATA/weekly_injuries_processed.csv"
+LOG_FILE = "../OUTPUT/preprocessing_log.txt"
 # -----------------------------------------------------------------------------
 
 log_lines = []
