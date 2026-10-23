@@ -1,0 +1,53 @@
+{
+  "pedestrians": {
+    "group": "pedestrians",
+    "candidate": 2,
+    "valid_folds": 18,
+    "mean_mae": 28.360644292518483,
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      52
+    ]
+  },
+  "cyclists": {
+    "group": "cyclists",
+    "candidate": 2,
+    "valid_folds": 18,
+    "mean_mae": 16.02479995559542,
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      52
+    ]
+  },
+  "motorists": {
+    "group": "motorists",
+    "candidate": 2,
+    "valid_folds": 18,
+    "mean_mae": 65.49797352784613,
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      52
+    ]
+  }
+}
