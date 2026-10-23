@@ -1,0 +1,68 @@
+{
+  "pedestrians": {
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "valid_folds": 18,
+    "mean_mae": 22.83592299875707,
+    "baseline_mae": 26.01851851851852,
+    "coverage": 0.9120370370370371,
+    "mean_interval_width": 92.11073513971036,
+    "order": [
+      1,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      1,
+      52
+    ],
+    "trend": "n"
+  },
+  "cyclists": {
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "valid_folds": 18,
+    "mean_mae": 13.626344272667327,
+    "baseline_mae": 17.462962962962962,
+    "coverage": 0.8425925925925927,
+    "mean_interval_width": 49.36119985992141,
+    "order": [
+      0,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      1,
+      52
+    ],
+    "trend": "n"
+  },
+  "motorists": {
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "valid_folds": 18,
+    "mean_mae": 65.49797352784613,
+    "baseline_mae": 70.18518518518519,
+    "coverage": 0.9814814814814814,
+    "mean_interval_width": 407.06361040135715,
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      52
+    ],
+    "trend": "c"
+  }
+}

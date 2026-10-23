@@ -1,0 +1,1588 @@
+[
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 23,
+    "residual_mean": -4.111626575963701,
+    "residual_std": 38.14214277643787,
+    "ljung_box": [
+      [
+        [
+          4.36025157588508,
+          49.03512868728713
+        ],
+        [
+          0.9760240708191695,
+          0.5912261033117827
+        ]
+      ]
+    ],
+    "elapsed_seconds": 13.75732683300157,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 1,
+    "train_end": "2021-10-10",
+    "validation_start": "2021-10-17",
+    "validation_end": "2022-01-02"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 36,
+    "residual_mean": -3.1553674876539577,
+    "residual_std": 38.822929105074884,
+    "ljung_box": [
+      [
+        [
+          4.006760262136137,
+          45.26499094195483
+        ],
+        [
+          0.9833140951063021,
+          0.7340604385599954
+        ]
+      ]
+    ],
+    "elapsed_seconds": 19.72529570900224,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 0,
+    "train_end": "2021-07-18",
+    "validation_start": "2021-07-25",
+    "validation_end": "2021-10-10"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 42,
+    "residual_mean": -3.411331782982435,
+    "residual_std": 37.79996462746249,
+    "ljung_box": [
+      [
+        [
+          4.462900140566406,
+          47.65380758410278
+        ],
+        [
+          0.9735635536685718,
+          0.6453403721825027
+        ]
+      ]
+    ],
+    "elapsed_seconds": 23.53057474999514,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 2,
+    "train_end": "2022-01-02",
+    "validation_start": "2022-01-09",
+    "validation_end": "2022-03-27"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -3.3508864242844543,
+    "residual_std": 37.14462353896677,
+    "ljung_box": [
+      [
+        [
+          4.994838443474562,
+          49.120286552035054
+        ],
+        [
+          0.9581511378033545,
+          0.5878546607158964
+        ]
+      ]
+    ],
+    "elapsed_seconds": 23.70986320800148,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 3,
+    "train_end": "2022-03-27",
+    "validation_start": "2022-04-03",
+    "validation_end": "2022-06-19"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 40,
+    "residual_mean": -3.307071238875546,
+    "residual_std": 36.57077231728294,
+    "ljung_box": [
+      [
+        [
+          5.2178120599086775,
+          51.17699932532424
+        ],
+        [
+          0.9503052111876238,
+          0.5062287711329667
+        ]
+      ]
+    ],
+    "elapsed_seconds": 27.40959175000171,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 4,
+    "train_end": "2022-06-19",
+    "validation_start": "2022-06-26",
+    "validation_end": "2022-09-11"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 43,
+    "residual_mean": -3.279443849551261,
+    "residual_std": 36.05180440011492,
+    "ljung_box": [
+      [
+        [
+          5.901608707920394,
+          52.814394376646334
+        ],
+        [
+          0.9209603590459572,
+          0.44243765445708116
+        ]
+      ]
+    ],
+    "elapsed_seconds": 28.67804291700304,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 5,
+    "train_end": "2022-09-11",
+    "validation_start": "2022-09-18",
+    "validation_end": "2022-12-04"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 35,
+    "residual_mean": -3.2813144541585024,
+    "residual_std": 35.71828650256884,
+    "ljung_box": [
+      [
+        [
+          6.696029273264789,
+          51.656347746867915
+        ],
+        [
+          0.8770303133615116,
+          0.48735764536716436
+        ]
+      ]
+    ],
+    "elapsed_seconds": 27.68816041699756,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 6,
+    "train_end": "2022-12-04",
+    "validation_start": "2022-12-11",
+    "validation_end": "2023-02-26"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 34,
+    "residual_mean": -3.1559312004861515,
+    "residual_std": 35.22096128187657,
+    "ljung_box": [
+      [
+        [
+          7.528129720283278,
+          57.08020529444559
+        ],
+        [
+          0.8208339326801805,
+          0.29194366668147537
+        ]
+      ]
+    ],
+    "elapsed_seconds": 27.18219216599391,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 8,
+    "train_end": "2023-05-21",
+    "validation_start": "2023-05-28",
+    "validation_end": "2023-08-13"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 42,
+    "residual_mean": -3.285697517615731,
+    "residual_std": 35.6131334125487,
+    "ljung_box": [
+      [
+        [
+          7.162296595568781,
+          54.54408634073552
+        ],
+        [
+          0.8467044877615886,
+          0.37802114618113347
+        ]
+      ]
+    ],
+    "elapsed_seconds": 34.62469137500011,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 7,
+    "train_end": "2023-02-26",
+    "validation_start": "2023-03-05",
+    "validation_end": "2023-05-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 43,
+    "residual_mean": -3.1041238899765564,
+    "residual_std": 34.691520888991136,
+    "ljung_box": [
+      [
+        [
+          7.3399873549137835,
+          55.62394288661127
+        ],
+        [
+          0.8343525131644047,
+          0.3399926285911981
+        ]
+      ]
+    ],
+    "elapsed_seconds": 40.62493912500213,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 9,
+    "train_end": "2023-08-13",
+    "validation_start": "2023-08-20",
+    "validation_end": "2023-11-05"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -3.153059501618316,
+    "residual_std": 34.262143775674105,
+    "ljung_box": [
+      [
+        [
+          7.526224538898918,
+          57.341312701816385
+        ],
+        [
+          0.8209730015865253,
+          0.2837557508423403
+        ]
+      ]
+    ],
+    "elapsed_seconds": 38.82010008399811,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 10,
+    "train_end": "2023-11-05",
+    "validation_start": "2023-11-12",
+    "validation_end": "2024-01-28"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 44,
+    "residual_mean": -3.093227284564783,
+    "residual_std": 34.06646193183727,
+    "ljung_box": [
+      [
+        [
+          8.195881116298667,
+          54.44700424260326
+        ],
+        [
+          0.7696416693900353,
+          0.3815301205982519
+        ]
+      ]
+    ],
+    "elapsed_seconds": 44.41047058300319,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 11,
+    "train_end": "2024-01-28",
+    "validation_start": "2024-02-04",
+    "validation_end": "2024-04-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -3.056407014730995,
+    "residual_std": 33.65748389040009,
+    "ljung_box": [
+      [
+        [
+          8.204210588942223,
+          53.69702505517479
+        ],
+        [
+          0.7689752919594189,
+          0.40908991859684657
+        ]
+      ]
+    ],
+    "elapsed_seconds": 35.555689083004836,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 12,
+    "train_end": "2024-04-21",
+    "validation_start": "2024-04-28",
+    "validation_end": "2024-07-14"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 34,
+    "residual_mean": -3.0915383494543662,
+    "residual_std": 33.384399905187436,
+    "ljung_box": [
+      [
+        [
+          8.13394052511778,
+          53.428720372271734
+        ],
+        [
+          0.774577715029003,
+          0.4191305097071232
+        ]
+      ]
+    ],
+    "elapsed_seconds": 28.941309249996266,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 13,
+    "train_end": "2024-07-14",
+    "validation_start": "2024-07-21",
+    "validation_end": "2024-10-06"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -3.1162167636512024,
+    "residual_std": 33.02201620333599,
+    "ljung_box": [
+      [
+        [
+          8.48188889746509,
+          54.67518641884373
+        ],
+        [
+          0.7464303974454527,
+          0.37330512679845745
+        ]
+      ]
+    ],
+    "elapsed_seconds": 34.87802695899882,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 14,
+    "train_end": "2024-10-06",
+    "validation_start": "2024-10-13",
+    "validation_end": "2024-12-29"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 42,
+    "residual_mean": -2.9387071325192964,
+    "residual_std": 33.23280973026248,
+    "ljung_box": [
+      [
+        [
+          9.355988313257559,
+          52.696940406198465
+        ],
+        [
+          0.6722609991782087,
+          0.4469398098740247
+        ]
+      ]
+    ],
+    "elapsed_seconds": 43.58363112499501,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 15,
+    "train_end": "2024-12-29",
+    "validation_start": "2025-01-05",
+    "validation_end": "2025-03-23"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 42,
+    "residual_mean": -3.1035603653317714,
+    "residual_std": 32.97078035937486,
+    "ljung_box": [
+      [
+        [
+          10.51150908992958,
+          54.6010232076373
+        ],
+        [
+          0.5711793144907833,
+          0.37596977124602937
+        ]
+      ]
+    ],
+    "elapsed_seconds": 45.317956416001834,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 16,
+    "train_end": "2025-03-23",
+    "validation_start": "2025-03-30",
+    "validation_end": "2025-06-15"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 34,
+    "residual_mean": -1.048861141467825,
+    "residual_std": 20.717853851662273,
+    "ljung_box": [
+      [
+        [
+          61.69171134696947,
+          122.01123700898229
+        ],
+        [
+          1.107759314633955e-08,
+          1.481028402195854e-07
+        ]
+      ]
+    ],
+    "elapsed_seconds": 16.69504112499999,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 0,
+    "train_end": "2021-07-18",
+    "validation_start": "2021-07-25",
+    "validation_end": "2021-10-10"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 39,
+    "residual_mean": -3.0731704435535554,
+    "residual_std": 32.742427236718235,
+    "ljung_box": [
+      [
+        [
+          10.712746339797189,
+          54.44695067220727
+        ],
+        [
+          0.5536835343100504,
+          0.38153206073680773
+        ]
+      ]
+    ],
+    "elapsed_seconds": 46.77285758299695,
+    "group": "pedestrians",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing_ar",
+    "fold": 17,
+    "train_end": "2025-06-15",
+    "validation_start": "2025-06-22",
+    "validation_end": "2025-09-07"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 39,
+    "residual_mean": -1.9328092292577412,
+    "residual_std": 20.55473675669921,
+    "ljung_box": [
+      [
+        [
+          74.48393818653454,
+          139.3109753713783
+        ],
+        [
+          4.598978460611536e-11,
+          6.610707036976929e-10
+        ]
+      ]
+    ],
+    "elapsed_seconds": 20.37107791699964,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 1,
+    "train_end": "2021-10-10",
+    "validation_start": "2021-10-17",
+    "validation_end": "2022-01-02"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [
+      "EstimationWarning: Non-invertible starting seasonal moving average Using zeros as starting parameters."
+    ],
+    "iterations": 43,
+    "residual_mean": -1.1679973521482883,
+    "residual_std": 20.588907424038982,
+    "ljung_box": [
+      [
+        [
+          79.66411611499441,
+          152.92647857731993
+        ],
+        [
+          4.783140238582306e-12,
+          7.1812001625828164e-12
+        ]
+      ]
+    ],
+    "elapsed_seconds": 28.432308082999953,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 2,
+    "train_end": "2022-01-02",
+    "validation_start": "2022-01-09",
+    "validation_end": "2022-03-27"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 37,
+    "residual_mean": -1.1389073380438404,
+    "residual_std": 20.3740125091743,
+    "ljung_box": [
+      [
+        [
+          76.41330111519275,
+          149.62303930511567
+        ],
+        [
+          1.984484420352831e-11,
+          2.192083280824087e-11
+        ]
+      ]
+    ],
+    "elapsed_seconds": 24.821970333003264,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 3,
+    "train_end": "2022-03-27",
+    "validation_start": "2022-04-03",
+    "validation_end": "2022-06-19"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 48,
+    "residual_mean": -0.5105293965082559,
+    "residual_std": 20.14240550115626,
+    "ljung_box": [
+      [
+        [
+          85.76979766358869,
+          167.05583390959592
+        ],
+        [
+          3.236503879124252e-13,
+          5.381262722560153e-14
+        ]
+      ]
+    ],
+    "elapsed_seconds": 37.091249124998285,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 4,
+    "train_end": "2022-06-19",
+    "validation_start": "2022-06-26",
+    "validation_end": "2022-09-11"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 29,
+    "residual_mean": -0.6329634570470154,
+    "residual_std": 19.892774693036912,
+    "ljung_box": [
+      [
+        [
+          89.4785126671569,
+          175.73592482810537
+        ],
+        [
+          6.228994114786969e-14,
+          2.43962174739198e-15
+        ]
+      ]
+    ],
+    "elapsed_seconds": 27.10375770799874,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 5,
+    "train_end": "2022-09-11",
+    "validation_start": "2022-09-18",
+    "validation_end": "2022-12-04"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 25,
+    "residual_mean": -0.5909076266339939,
+    "residual_std": 19.80062767495489,
+    "ljung_box": [
+      [
+        [
+          87.6866175610967,
+          170.94219959099524
+        ],
+        [
+          1.3824677315038873e-13,
+          1.357217837292901e-14
+        ]
+      ]
+    ],
+    "elapsed_seconds": 25.893834250004147,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 6,
+    "train_end": "2022-12-04",
+    "validation_start": "2022-12-11",
+    "validation_end": "2023-02-26"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 28,
+    "residual_mean": -0.3113613958166794,
+    "residual_std": 19.55846507558577,
+    "ljung_box": [
+      [
+        [
+          90.13502710176164,
+          171.16996815969264
+        ],
+        [
+          4.648947149776755e-14,
+          1.2514651460534839e-14
+        ]
+      ]
+    ],
+    "elapsed_seconds": 23.784651957997994,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 7,
+    "train_end": "2023-02-26",
+    "validation_start": "2023-03-05",
+    "validation_end": "2023-05-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 25,
+    "residual_mean": -0.15576872358834765,
+    "residual_std": 19.377874744873463,
+    "ljung_box": [
+      [
+        [
+          106.43854165592064,
+          194.7838079060176
+        ],
+        [
+          3.0219194735805803e-17,
+          2.251631491416102e-18
+        ]
+      ]
+    ],
+    "elapsed_seconds": 19.277026249998016,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 9,
+    "train_end": "2023-08-13",
+    "validation_start": "2023-08-20",
+    "validation_end": "2023-11-05"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 40,
+    "residual_mean": 0.375509474474347,
+    "residual_std": 19.515680658541125,
+    "ljung_box": [
+      [
+        [
+          102.95149767481655,
+          181.3863087119895
+        ],
+        [
+          1.4676249288207942e-16,
+          3.1537289113213226e-16
+        ]
+      ]
+    ],
+    "elapsed_seconds": 29.43767070800095,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 8,
+    "train_end": "2023-05-21",
+    "validation_start": "2023-05-28",
+    "validation_end": "2023-08-13"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 27,
+    "residual_mean": 0.19191406897002486,
+    "residual_std": 19.203826402068547,
+    "ljung_box": [
+      [
+        [
+          118.17831019370213,
+          203.2434249424347
+        ],
+        [
+          1.4254363085961467e-19,
+          9.356588034086433e-20
+        ]
+      ]
+    ],
+    "elapsed_seconds": 24.69718825000018,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 11,
+    "train_end": "2024-01-28",
+    "validation_start": "2024-02-04",
+    "validation_end": "2024-04-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 21,
+    "residual_mean": 0.5280879955686151,
+    "residual_std": 19.10369712076811,
+    "ljung_box": [
+      [
+        [
+          122.40440140471,
+          207.9463054943914
+        ],
+        [
+          2.0475183161325822e-20,
+          1.567390495265844e-20
+        ]
+      ]
+    ],
+    "elapsed_seconds": 21.012179999997898,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 12,
+    "train_end": "2024-04-21",
+    "validation_start": "2024-04-28",
+    "validation_end": "2024-07-14"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 44,
+    "residual_mean": -0.24002303075963843,
+    "residual_std": 19.27303418339204,
+    "ljung_box": [
+      [
+        [
+          110.93256289474571,
+          201.56839111951317
+        ],
+        [
+          3.912683610442217e-18,
+          1.7625235756852955e-19
+        ]
+      ]
+    ],
+    "elapsed_seconds": 37.15543833300035,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 10,
+    "train_end": "2023-11-05",
+    "validation_start": "2023-11-12",
+    "validation_end": "2024-01-28"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 25,
+    "residual_mean": 0.2946402036037026,
+    "residual_std": 18.92559554813913,
+    "ljung_box": [
+      [
+        [
+          124.48156436193206,
+          216.74627762509735
+        ],
+        [
+          7.87221060591313e-21,
+          5.357002889977498e-22
+        ]
+      ]
+    ],
+    "elapsed_seconds": 22.73831600000267,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 13,
+    "train_end": "2024-07-14",
+    "validation_start": "2024-07-21",
+    "validation_end": "2024-10-06"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 33,
+    "residual_mean": 0.40197134174189825,
+    "residual_std": 18.93103081087535,
+    "ljung_box": [
+      [
+        [
+          123.8436089037392,
+          215.94536450108546
+        ],
+        [
+          1.0559861193105905e-20,
+          7.2964702881486565e-22
+        ]
+      ]
+    ],
+    "elapsed_seconds": 32.46027170799789,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 15,
+    "train_end": "2024-12-29",
+    "validation_start": "2025-01-05",
+    "validation_end": "2025-03-23"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 35,
+    "residual_mean": 0.13265331878172953,
+    "residual_std": 18.960224384643592,
+    "ljung_box": [
+      [
+        [
+          125.03089304638745,
+          222.34430759585877
+        ],
+        [
+          6.112407487125501e-21,
+          6.123684267152124e-23
+        ]
+      ]
+    ],
+    "elapsed_seconds": 35.673770832996524,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 14,
+    "train_end": "2024-10-06",
+    "validation_start": "2024-10-13",
+    "validation_end": "2024-12-29"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 47,
+    "residual_mean": -0.6869866027097351,
+    "residual_std": 109.25005580781315,
+    "ljung_box": [
+      [
+        [
+          8.309052583051269,
+          98.07004482408689
+        ],
+        [
+          0.7605366716570781,
+          0.00011748572518727407
+        ]
+      ]
+    ],
+    "elapsed_seconds": 8.371713374996034,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 0,
+    "train_end": "2021-07-18",
+    "validation_start": "2021-07-25",
+    "validation_end": "2021-10-10"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 32,
+    "residual_mean": 0.41759602754793135,
+    "residual_std": 18.735329297815063,
+    "ljung_box": [
+      [
+        [
+          124.56070070916395,
+          217.97924159679664
+        ],
+        [
+          7.590480248245821e-21,
+          3.3270560684528435e-22
+        ]
+      ]
+    ],
+    "elapsed_seconds": 33.75524741600384,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 16,
+    "train_end": "2025-03-23",
+    "validation_start": "2025-03-30",
+    "validation_end": "2025-06-15"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 43,
+    "residual_mean": -0.6637910064344574,
+    "residual_std": 107.58172428334362,
+    "ljung_box": [
+      [
+        [
+          8.507476865010219,
+          101.92101599247128
+        ],
+        [
+          0.744322678272366,
+          4.3379325264370606e-05
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.482462708001549,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 1,
+    "train_end": "2021-10-10",
+    "validation_start": "2021-10-17",
+    "validation_end": "2022-01-02"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 55,
+    "residual_mean": -0.6437745052737981,
+    "residual_std": 106.14103728532021,
+    "ljung_box": [
+      [
+        [
+          8.66582215786064,
+          111.01313038252589
+        ],
+        [
+          0.7311774638735261,
+          3.6418668327213474e-06
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.357040542003233,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 2,
+    "train_end": "2022-01-02",
+    "validation_start": "2022-01-09",
+    "validation_end": "2022-03-27"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 26,
+    "residual_mean": 0.5750440864312529,
+    "residual_std": 18.55455385346845,
+    "ljung_box": [
+      [
+        [
+          127.4150748136258,
+          219.3546563476347
+        ],
+        [
+          2.036246098777483e-21,
+          1.9538871531379368e-22
+        ]
+      ]
+    ],
+    "elapsed_seconds": 27.451477291993797,
+    "group": "cyclists",
+    "candidate": 0,
+    "candidate_name": "seasonal_smoothing",
+    "fold": 17,
+    "train_end": "2025-06-15",
+    "validation_start": "2025-06-22",
+    "validation_end": "2025-09-07"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 62,
+    "residual_mean": -0.6271815986435613,
+    "residual_std": 105.33938939914495,
+    "ljung_box": [
+      [
+        [
+          9.032604051070326,
+          110.90737161479463
+        ],
+        [
+          0.7001431178442523,
+          3.7518633865512956e-06
+        ]
+      ]
+    ],
+    "elapsed_seconds": 10.99222862500028,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 3,
+    "train_end": "2022-03-27",
+    "validation_start": "2022-04-03",
+    "validation_end": "2022-06-19"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 46,
+    "residual_mean": -0.5916132811102454,
+    "residual_std": 103.69251400795153,
+    "ljung_box": [
+      [
+        [
+          8.443177902363944,
+          113.50146545333249
+        ],
+        [
+          0.7496098887783662,
+          1.797527105730547e-06
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.100065375001577,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 4,
+    "train_end": "2022-06-19",
+    "validation_start": "2022-06-26",
+    "validation_end": "2022-09-11"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 52,
+    "residual_mean": -0.5802101846721537,
+    "residual_std": 103.01128362549484,
+    "ljung_box": [
+      [
+        [
+          8.743364954026463,
+          115.54347914641286
+        ],
+        [
+          0.724680092771746,
+          9.986353102264647e-07
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.929371499994886,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 5,
+    "train_end": "2022-09-11",
+    "validation_start": "2022-09-18",
+    "validation_end": "2022-12-04"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 49,
+    "residual_mean": -0.5672026154370459,
+    "residual_std": 102.55249658346614,
+    "ljung_box": [
+      [
+        [
+          10.300769930901483,
+          121.16215515123844
+        ],
+        [
+          0.5895925860364843,
+          1.9101375068751694e-07
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.636530249998032,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 6,
+    "train_end": "2022-12-04",
+    "validation_start": "2022-12-11",
+    "validation_end": "2023-02-26"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -0.5518061243943378,
+    "residual_std": 101.32265559762781,
+    "ljung_box": [
+      [
+        [
+          11.919154783545665,
+          126.64904748378926
+        ],
+        [
+          0.4521941205605221,
+          3.618013155060617e-08
+        ]
+      ]
+    ],
+    "elapsed_seconds": 7.977478334003536,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 7,
+    "train_end": "2023-02-26",
+    "validation_start": "2023-03-05",
+    "validation_end": "2023-05-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 43,
+    "residual_mean": -0.5269877479206796,
+    "residual_std": 100.39750867440402,
+    "ljung_box": [
+      [
+        [
+          12.151217009741055,
+          134.36332267389744
+        ],
+        [
+          0.43361294604800027,
+          3.2394131412859623e-09
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.110541624999314,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 8,
+    "train_end": "2023-05-21",
+    "validation_start": "2023-05-28",
+    "validation_end": "2023-08-13"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 49,
+    "residual_mean": -0.5161612165307286,
+    "residual_std": 99.59049979429318,
+    "ljung_box": [
+      [
+        [
+          12.044051161764095,
+          138.6339025032777
+        ],
+        [
+          0.44214834852951307,
+          8.231711062244017e-10
+        ]
+      ]
+    ],
+    "elapsed_seconds": 10.478495458002726,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 9,
+    "train_end": "2023-08-13",
+    "validation_start": "2023-08-20",
+    "validation_end": "2023-11-05"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 51,
+    "residual_mean": -0.49896285059309736,
+    "residual_std": 98.6372301550783,
+    "ljung_box": [
+      [
+        [
+          12.16976352997604,
+          144.00848757311815
+        ],
+        [
+          0.43214388593068537,
+          1.4219342225634376e-10
+        ]
+      ]
+    ],
+    "elapsed_seconds": 11.439466709001863,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 10,
+    "train_end": "2023-11-05",
+    "validation_start": "2023-11-12",
+    "validation_end": "2024-01-28"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 46,
+    "residual_mean": -0.4889344852545306,
+    "residual_std": 97.67953531448491,
+    "ljung_box": [
+      [
+        [
+          13.057000355360513,
+          151.41345406376035
+        ],
+        [
+          0.36491130541074035,
+          1.1989252854440115e-11
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.909269000003405,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 11,
+    "train_end": "2024-01-28",
+    "validation_start": "2024-02-04",
+    "validation_end": "2024-04-21"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 41,
+    "residual_mean": -0.4727870505435519,
+    "residual_std": 96.51844577031338,
+    "ljung_box": [
+      [
+        [
+          13.42464798607838,
+          154.95897355355217
+        ],
+        [
+          0.3389453641591308,
+          3.594032122667202e-12
+        ]
+      ]
+    ],
+    "elapsed_seconds": 9.496659041004023,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 12,
+    "train_end": "2024-04-21",
+    "validation_start": "2024-04-28",
+    "validation_end": "2024-07-14"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 47,
+    "residual_mean": -0.46890678119319357,
+    "residual_std": 96.68007864487849,
+    "ljung_box": [
+      [
+        [
+          13.418959106093457,
+          151.35743074827928
+        ],
+        [
+          0.33933820110447666,
+          1.2218403596238692e-11
+        ]
+      ]
+    ],
+    "elapsed_seconds": 10.359216958000616,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 13,
+    "train_end": "2024-07-14",
+    "validation_start": "2024-07-21",
+    "validation_end": "2024-10-06"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 53,
+    "residual_mean": -0.45824984104775707,
+    "residual_std": 96.67971272580286,
+    "ljung_box": [
+      [
+        [
+          10.728743917349227,
+          153.19811400082676
+        ],
+        [
+          0.5522972974609637,
+          6.548262381524108e-12
+        ]
+      ]
+    ],
+    "elapsed_seconds": 12.358361416998378,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 14,
+    "train_end": "2024-10-06",
+    "validation_start": "2024-10-13",
+    "validation_end": "2024-12-29"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 45,
+    "residual_mean": -0.44627236950037924,
+    "residual_std": 95.67736080237731,
+    "ljung_box": [
+      [
+        [
+          11.121902870632544,
+          157.95661361841655
+        ],
+        [
+          0.5185015181836934,
+          1.285192058104665e-12
+        ]
+      ]
+    ],
+    "elapsed_seconds": 10.6711117080049,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 15,
+    "train_end": "2024-12-29",
+    "validation_start": "2025-01-05",
+    "validation_end": "2025-03-23"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 48,
+    "residual_mean": -0.4303892565452418,
+    "residual_std": 94.82663891567935,
+    "ljung_box": [
+      [
+        [
+          11.773056722002268,
+          160.69121427375674
+        ],
+        [
+          0.4640736889788465,
+          4.991967606651119e-13
+        ]
+      ]
+    ],
+    "elapsed_seconds": 10.088509249995695,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 16,
+    "train_end": "2025-03-23",
+    "validation_start": "2025-03-30",
+    "validation_end": "2025-06-15"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 48,
+    "residual_mean": -0.4262523855438225,
+    "residual_std": 94.82531132999388,
+    "ljung_box": [
+      [
+        [
+          11.497822487863681,
+          165.11620074966135
+        ],
+        [
+          0.48680412391245054,
+          1.065017279559259e-13
+        ]
+      ]
+    ],
+    "elapsed_seconds": 8.817449209003826,
+    "group": "motorists",
+    "candidate": 0,
+    "candidate_name": "original",
+    "fold": 17,
+    "train_end": "2025-06-15",
+    "validation_start": "2025-06-22",
+    "validation_end": "2025-09-07"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 36,
+    "residual_mean": -3.054227917059077,
+    "residual_std": 32.370801987200686,
+    "ljung_box": [
+      [
+        [
+          9.912517397371408,
+          55.524950742849136
+        ],
+        [
+          0.6236353343036503,
+          0.34339839683648454
+        ]
+      ]
+    ],
+    "elapsed_seconds": 22.583058709002216,
+    "group": "pedestrians",
+    "candidate_name": "seasonal_smoothing_ar",
+    "stage": "final"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 30,
+    "residual_mean": 0.8065461256966066,
+    "residual_std": 18.407815837393507,
+    "ljung_box": [
+      [
+        [
+          126.87441672042429,
+          212.40955855117465
+        ],
+        [
+          2.6130698932283603e-21,
+          2.8429906543823007e-21
+        ]
+      ]
+    ],
+    "elapsed_seconds": 18.60725116699905,
+    "group": "cyclists",
+    "candidate_name": "seasonal_smoothing",
+    "stage": "final"
+  },
+  {
+    "converged": true,
+    "error": null,
+    "warnings": [],
+    "iterations": 45,
+    "residual_mean": -0.40913649896491905,
+    "residual_std": 94.48371972784817,
+    "ljung_box": [
+      [
+        [
+          12.520787175227508,
+          172.27016236072419
+        ],
+        [
+          0.4048111230738706,
+          8.452457564445085e-15
+        ]
+      ]
+    ],
+    "elapsed_seconds": 7.5182370000038645,
+    "group": "motorists",
+    "candidate_name": "original",
+    "stage": "final"
+  }
+]
