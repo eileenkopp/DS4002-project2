@@ -1,0 +1,41 @@
+1) Is there a yearly pattern? (seasonal strength; >~0.3 is meaningful)
+            trend_strength  seasonal_strength
+group                                        
+Pedestrian           0.451              0.447
+Cyclist              0.093              0.810
+Motorist             0.496              0.411 
+
+2) Trend change around events (26 weeks before vs after)
+     group                    event  trend_before  trend_after  pct_change
+Pedestrian     COVID-19 (NYC PAUSE)       178.893      152.788     -14.592
+Pedestrian Congestion pricing start       179.232      176.359      -1.603
+   Cyclist     COVID-19 (NYC PAUSE)       100.167      111.009      10.825
+   Cyclist Congestion pricing start        96.694      101.787       5.266
+  Motorist     COVID-19 (NYC PAUSE)       833.542      748.660     -10.183
+  Motorist Congestion pricing start       694.236      661.096      -4.773 
+
+3) Seasonal pattern by group: peak and trough weeks of year
+   Pedestrian  peak week 50 (+27.7%)   trough week 33 (-21.2%)
+   Cyclist     peak week 31 (+45.1%)   trough week 52 (-52.9%)
+   Motorist    peak week 26 (+15.8%)   trough week  1 (-21.2%)
+
+   Correlation of seasonal profiles between groups:
+            Pedestrian  Cyclist  Motorist
+Pedestrian       1.000   -0.477    -0.403
+Cyclist         -0.477    1.000     0.904
+Motorist        -0.403    0.904     1.000 
+
+Outlier weeks: 88 total (9 flagged holiday_week, 46 in covid_period)
+Largest residual weeks:
+                  group  observed    resid  robust_z  holiday_week  covid_period
+week_ending                                                                     
+2020-04-05     Motorist   214.000 -550.361   -12.243             0             1
+2020-05-03     Motorist   283.000 -540.440   -12.022             0             1
+2020-04-19     Motorist   207.000 -528.474   -11.754             0             1
+2020-04-12     Motorist   252.000 -511.286   -11.370             0             1
+2020-03-29     Motorist   250.000 -502.170   -11.166             0             1
+2020-05-10     Motorist   359.000 -481.833   -10.712             0             1
+2020-04-26     Motorist   270.000 -474.847   -10.556             0             1
+2019-12-15   Pedestrian   375.000  157.612    10.117             0             0
+2020-05-24     Motorist   454.000 -433.439    -9.630             0             1
+2020-05-17     Motorist   438.000 -412.576    -9.164             0             1

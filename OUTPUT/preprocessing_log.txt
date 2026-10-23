@@ -1,7 +1,7 @@
-------------------------------------------------------------
+============================================================
 PREPROCESSING LOG
-------------------------------------------------------------
-Source file: /content/Motor_Vehicle_Collisions_-_Crashes_20261016.csv
+============================================================
+Source file: DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv
 Columns used: CRASH DATE, NUMBER OF PEDESTRIANS INJURED, NUMBER OF CYCLIST INJURED, NUMBER OF MOTORIST INJURED
 Records loaded: 2,269,187
 
