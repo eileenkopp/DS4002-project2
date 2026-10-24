@@ -1,3 +1,23 @@
+"""
+preprocess.py - Clean the raw NYPD crash data and build weekly injury counts
+
+Purpose : Turn the raw crash file (one row per crash) into weekly totals of
+          pedestrian, cyclist, and motorist injuries, following the Preprocessing
+          plan in MI2: remove invalid dates, treat bad injury counts as missing for
+          that group only, sum injuries by week, add holiday and COVID-19
+          indicators, and check that the weekly totals match the records.
+
+Run order: run first, before STL.py
+
+Input   : DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv (raw data, ~567 MB,
+          not in repo; download instructions in DATA/README.md)
+Output  : DATA/weekly_injuries_processed.csv   weekly counts with indicator columns
+          OUTPUT/preprocessing_log.txt         records removed at each cleaning step
+
+How to run: from the project root, run  python SCRIPTS/preprocess.py, since paths are relative it must be run from this directory
+Notes: Settings (START_DATE, END_DATE, COVID_START, COVID_END) are in the Settings section.
+       Keeps March 2016 (FORMS reporting began) through December 2025 (2026 excluded).
+"""
 import pandas as pd
 from pandas.tseries.holiday import USFederalHolidayCalendar
 
