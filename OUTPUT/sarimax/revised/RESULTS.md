@@ -17,7 +17,6 @@ Model choices were fixed using pretest evidence before final forecasts were rege
 
 ## Verification
 
-- Twelve unit tests passed, including leakage, overwrite and input-change safeguards.
 - All 54 CV fits and three final fits converged.
 - Validation export: 648 rows, all pretest; final export: 36 rows with aligned dates and numeric ordered intervals.
 - Processed input SHA-256 and all original full-output hashes are unchanged.
