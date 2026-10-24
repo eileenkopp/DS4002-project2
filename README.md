@@ -78,12 +78,12 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
           - stl_seasonal_profiles.png
           - stl_trends_compared.png
 - SCRIPTS
+    - EDA.py
     - SARIMAX.md
     - STL.py
     - preprocess.py
-    - sarimax.py
-    - test_sarimax.py
     - run_scripts.py
+    - sarimax.py
 - LICENSE
 - README.md
 - requirements.txt
