@@ -25,10 +25,12 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
 
 - DATA
   - Motor_Vehicle_Collisions_-_Crashes_20261016.csv
-      - **This file is too big to upload to github. To access, use this link to view where we got the data from the in the NYPD database (steps below contain how to get the data along with in the DATA/README.md file**
+      - **This file is too big to upload to github. To access, use this link to view where we got the data from the in the NYPD database (steps below contain how to get the data along with in the DATA/README.md file**)
   - weekly_injuries_processed.csv
   - README.md
 - OUTPUT
+  - fig1_weekly_series.png
+  - fig2_seasonal_profile.png
   - preprocessing_log.txt
   - weekly_injuries_processed.csv
   - sarimax
