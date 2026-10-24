@@ -1,4 +1,18 @@
-"""Weekly injury SARIMAX; run from any directory. See SARIMAX.md."""
+"""
+sarimax.py - Part 2: SARIMAX forecasts of weekly NYC injury counts
+
+Purpose : Fit a SARIMAX model for each road-user group, test it with rolling-origin
+          cross-validation, and forecast the final 12 weeks of 2025 with 80%
+          intervals, compared against a seasonal-naive baseline.
+
+Run order: run after preprocess.py
+Input   : DATA/weekly_injuries_processed.csv
+Output  : folder set by --output (never overwrites an existing run)
+
+How to run: python SCRIPTS/sarimax.py --mode full --jobs 3 --output OUTPUT/my_run
+Notes: Without options, the script runs only a quick test (--mode smoke).
+       See SCRIPTS/SARIMAX.md for all options and details.
+"""
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import hashlib
