@@ -15,7 +15,7 @@ Output  : OUTPUT/fig1_weekly_series.png      weekly injuries over time, COVID pe
           OUTPUT/fig2_seasonal_profile.png   average week-of-year pattern, before vs after COVID
           OUTPUT/eda_period_summary.csv      average weekly injuries in each period
 
-How to run: from the project root, run  python SCRIPTS/eda.py, since paths are relative it must be run from this directory
+How to run: from the project root, run  python SCRIPTS/EDA.py, since paths are relative it must be run from this directory
 Notes: Uses the full date range of the raw file (2012 onward), not the 2016-2025 study
        period used for modeling, so the plots show the longer history. Period cutoffs
        (PRE_END, POST_START) are in the Settings section.
