@@ -121,4 +121,4 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
 11. Interpret the results from the figures produced in the `OUTPUT` folder. STL results will be found under the folder `OUTPUT/stl`, SARIMAX results will be found under `OUTPUT/sarimax`. Preprocessing logs and cleaned csv will also be in `OUTPUT` if you are curious about those results as well.
 
 ## References
-1. [1] New York City Police Department, "Motor Vehicle Collisions – Crashes," NYC Open Data. Accessed: Oct. 7, 2026. [Online]. Available: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
+[1] New York City Police Department, "Motor Vehicle Collisions – Crashes," NYC Open Data. Accessed: Oct. 7, 2026. [Online]. Available: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
