@@ -1,5 +1,5 @@
 """
-eda.py - Exploratory data analysis: weekly injuries before, during, and after COVID-19
+EDA.py - Exploratory data analysis: weekly injuries before, during, and after COVID-19
 
 Purpose : Answer our EDA question from MI2: how did weekly injuries to pedestrians,
           cyclists, and motorists change before, during, and after the COVID-19
