@@ -12,7 +12,6 @@ Python 3.13 is the verified environment:
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -B -m unittest discover -s SCRIPTS -p 'test_*.py'
 .venv/bin/python -B SCRIPTS/sarimax.py --mode smoke
 .venv/bin/python -B SCRIPTS/sarimax.py --mode validate --jobs 3
 .venv/bin/python -B SCRIPTS/sarimax.py --mode full --jobs 3
