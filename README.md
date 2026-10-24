@@ -103,8 +103,8 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
 8. Run `preprocess.py` (**option 2 only from beyond here**)
    - **SKIP IF YOU ARE USING THE ALREADY PROCESSED DATA**
    - This cleans the data from 2016 to 2025 and aggregates the weekly injury counts of the 3 different groups
-   -    - Saves the cleaned data as `DATA/weekly_injuries_processed.csv` and a cleaning log as `OUTPUT/preprocessing_log.txt`
-   - (Optional, requires the raw CSV) Run <python SCRIPTS/EDA.py> to recreate the two exploratory plots shown in `DATA/README.md`, saved as `OUTPUT/fig1_weekly_series.png` and `OUTPUT/fig2_seasonal_profile.png`
+   - Saves the cleaned data as `DATA/weekly_injuries_processed.csv` (the file the other scripts read) and a cleaning log as `OUTPUT/preprocessing_log.txt`. A copy of our cleaned data is also kept in `OUTPUT` for reference.
+     - (Optional, requires the raw CSV) Run <python SCRIPTS/EDA.py> to recreate the two exploratory plots shown in `DATA/README.md`, saved as `OUTPUT/fig1_weekly_series.png` and `OUTPUT/fig2_seasonal_profile.png`
 9. Run `STL.py`
    - This does the STL with loess analysis on the cleaned data to determine trend over time, seasonal patterns, and residuals (weird cases) in the cleaned data
    - Creates `OUTPUT/stl` folder which contains various plots, a text summary of the results, csv's of the STL results (trend, seasonal, residuals), and additional info about the over all results in csv format
@@ -118,7 +118,7 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
      3. <--jobs __your_choice__>: 1, 2, 3 (how many SARIMAX validation fits run at the same time (use 1 on a slow computer), 1 is default)
      4. <--output ___output_dir__>: your output file name and location, remember **must be a new location**
     - Example command to reproduce our results: <python SCRIPTS/sarimax.py --profile revised --mode full --jobs 3 --output OUTPUT/my_run>
-11. Interpret the results from the figures produced in the `OUTPUT` folder. STL results will be found under the folder `OUTPUT/stl`, SARIMAX results will be found under `OUTPUT/sarimax`. The preprocessing log is in `OUTPUT`, and the cleaned csv is in `DATA`, if you are curious about those results as well.
+11. Interpret the results from the figures produced in the `OUTPUT` folder. STL results will be found under the folder `OUTPUT/stl`, SARIMAX results will be found under `OUTPUT/sarimax`. Preprocessing logs and cleaned csv will also be in `OUTPUT` if you are curious about those results as well.
 
 ## References
 1. [1] New York City Police Department, "Motor Vehicle Collisions – Crashes," NYC Open Data. Accessed: Oct. 7, 2026. [Online]. Available: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
