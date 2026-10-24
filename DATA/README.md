@@ -62,11 +62,11 @@ These are the 4 of the 29 raw columns used in our analysis [1].
 
 ## Explanatory Plots
 
-x
+![Weekly injuries over time](../OUTPUT/fig1_weekly_series.png)
 
 **Figure 1.** Weekly pedestrian, cyclist, and motorist injuries, with an 8-week average and the COVID-19 period shaded. All three series show a sharp break in spring 2020. Cyclist injuries returned to their earlier range, while pedestrian and motorist injuries have stayed below pre-pandemic levels since 2022.
 
-x
+![Seasonal pattern before and after COVID](../OUTPUT/fig2_seasonal_profile.png)
 
 **Figure 2.** Average weekly injuries by week of the year, before and after COVID-19, with the COVID period excluded. The seasonal shape is stable across periods. Pedestrian injuries peak in late fall and early winter, motorist injuries peak in early summer, and cyclist injuries peak in midsummer.
 
