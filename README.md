@@ -8,8 +8,6 @@ This repository contains our data information, scripts, and results/output for o
 
 - We used Python 3.13 as our programming language, which is the environment the SARIMAX code was verified in. Other python versions may not work so be sure to set up a virtual env with this version of python
 
-The type(s) of software you used for the project. 
-
 Add-on packages that need to be installed (the exact versions are in requirements.txt):
 - pandas
 - numpy
@@ -59,7 +57,7 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
             - fold_scores.csv
             - forecasts.csv
             - run.json
-            - validation_forecast.csv
+            - validation_forecasts.csv
   - stl
       - stl_summary.txt
       - info_summary
@@ -84,7 +82,7 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
     - preprocess.py
     - run_scripts.py
     - sarimax.py
-- LICENSE
+- LICENSE.md
 - README.md
 - requirements.txt
        
@@ -95,21 +93,22 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
 1. Clone the repo: clone the repository to your local PC and open it in your IDE
 2. Create a virtual environment that runs with version Python 3.13 <python3.13 -m venv venv>
 3. Activate the virtual environment <source venv/bin/activate>, verify the version is right with <python --version> (if something goes wrong with steps 2-3, google the issue to ensure these 2 steps are right)
-4. Download the Data from the internet, go to "https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data" and export the data as a csv
-5. Move the downloaded data into DATA folder under the name <Motor_Vehicle_Collisions_-_Crashes_20261016.csv>
-   - **Note**: If you don't wish to get the data online, you can do the following steps by just using our already cleaned data file: `DATA/weekly_injuries_processed.csv` and can skip directly to automatically running everything (see step 6) or directly to the stl analysis (step 8)
-6. **Choose how to run the scripts**: There are 2 options
-   - **Option 1 (automatic)**: run <python SCRIPTS/run_scripts.py> + <arguments_you_choose>. See the file `SCRIPTS/run_scripts.py` for the additional arguments you can run with the program. This option automatically goes through the scripts and runs them for you. See **STEP 9** for the options you have. Example run <python SCRIPTS/run_scripts.py --mode full --jobs 2>
-   - **Option 2 (manual)**: run the scripts yourself, in order, as described in the follow steps.
-7. Run `preprocess.py` (**option 2 only from beyond here**)
+4. Install the required packages: <pip install -r requirements.txt>
+5. Download the Data from the internet, go to "https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data" and export the data as a csv
+6. Move the downloaded data into DATA folder under the name <Motor_Vehicle_Collisions_-_Crashes_20261016.csv>
+   - **Note**: If you don't wish to get the data online, you can do the following steps by just using our already cleaned data file: `DATA/weekly_injuries_processed.csv` and can skip directly to automatically running everything (see step 7) or directly to the stl analysis (step 9)
+7. **Choose how to run the scripts**: There are 2 options
+   - **Option 1 (automatic)**: run <python SCRIPTS/run_scripts.py> + <arguments_you_choose>. See the file `SCRIPTS/run_scripts.py` for the additional arguments you can run with the program. This option automatically goes through the scripts and runs them for you. See **STEP 9** for the options you have. Example run <python SCRIPTS/run_scripts.py --jobs 2--output OUTPUT/sarimax/my_run>
+   - **Option 2 (manual)**: run the scripts yourself, in order, as described in the following steps.
+8. Run `preprocess.py` (**option 2 only from beyond here**)
    - **SKIP IF YOU ARE USING THE ALREADY PROCESSED DATA**
    - This cleans the data from 2016 to 2025 and aggregates the weekly injury counts of the 3 different groups
    - Saves the output into a file called "weekly_injuries_processed.csv" in the `OUTPUT` and `DATA` folder
-8. Run `STL.py`
+9. Run `STL.py`
    - This does the STL with loess analysis on the cleaned data to determine trend over time, seasonal patterns, and residuals (weird cases) in the cleaned data
    - Creates `OUTPUT/stl` folder which contains various plots, a text summary of the results, csv's of the STL results (trend, seasonal, residuals), and additional info about the over all results in csv format
-9. Run `sarimax.py`
-    - **Script never overwrites an existing run**. The repo already has our SARIMAX results, so when you try to reproduce them you must give each run a new folder with the <--output> command. Compare you new folder with ours afterward
+10. Run `sarimax.py`
+    - **Script never overwrites an existing run**. The repo already has our SARIMAX results, so when you try to reproduce them you must give each run a new folder with the <--output> command. Compare your new folder with ours afterward
     - **Default version run is the revised profile**. Add <--profile original> to run the original 3 candidate search instead
     - **Check `SCRIPTS/SARIMAX.md` to view all available commands**. There are a many ways that you can run the model that are too extensive to list in this summary portion, if you want to see how to run it in more detail check the file, otherwise just run it following the details provided above
     - Have the following arguments you can add onto the <python SCRIPTS/sarimax.py> command:
@@ -118,7 +117,7 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
      3. <--jobs __your_choice__>: 1, 2, 3 (how many SARIMAX validation fits run at the same time (use 1 on a slow computer), 3 is default)
      4. <--output ___output_dir__>: your output file name and location, remember **must be a new location**
     - Example command: <python SCRIPTS/sarimax.py --profile revised --mode smoke --jobs 1 --output OUTPUT/my_run>
-10. Interpret the results from the figures produced in the `OUTPUT` folder. STL results will be found under the folder `OUTPUT/stl`, SARIMAX results will be found under `OUTPUT/sarimax`. Preprocessing logs and cleaned csv will also be in `OUTPUT` if you are curious about those results as well.
+11. Interpret the results from the figures produced in the `OUTPUT` folder. STL results will be found under the folder `OUTPUT/stl`, SARIMAX results will be found under `OUTPUT/sarimax`. Preprocessing logs and cleaned csv will also be in `OUTPUT` if you are curious about those results as well.
 
 ## References
 1. New York City Police Department, “Motor Vehicle Collisions – Crashes,” NYC Open Data. [Online]. Available: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95 - Where we got the dataset (2016 - 2025)
