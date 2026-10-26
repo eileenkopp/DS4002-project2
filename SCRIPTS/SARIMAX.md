@@ -132,11 +132,6 @@ is checked after execution. The 52-week seasonal-naive values and unchanged fina
 schema support the evaluation teammate's MAE, percent improvement and interval
 coverage calculations. No separate production evaluation module is introduced.
 
-Archived investigation evidence is in `OUTPUT/sarimax/investigation/`: candidate
-scores and diagnostics, pedestrian validation forecasts, the interval history
-checks, the follow-up plan and scores, and `decisions.json` recording adoption
-criteria, configurations, package versions, and protected original-output hashes.
-
 The original verified run in `OUTPUT/sarimax/full/` had mean validation MAEs
 28.360644, 16.024800 and 65.497974, respectively. All original fits converged.
 Its residual diagnostics showed remaining correlation. Those results are retained
