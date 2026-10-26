@@ -13,7 +13,6 @@ Input   : DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv (raw data, ~567 M
           not in repo; download instructions in DATA/README.md)
 Output  : OUTPUT/fig1_weekly_series.png      weekly injuries over time, COVID period shaded
           OUTPUT/fig2_seasonal_profile.png   average week-of-year pattern, before vs after COVID
-          OUTPUT/eda_period_summary.csv      average weekly injuries in each period
 
 How to run: from the project root, run  python SCRIPTS/EDA.py, since paths are relative it must be run from this directory
 Notes: Uses the full date range of the raw file (2012 onward), not the 2016-2025 study
@@ -31,7 +30,6 @@ POST_START = "2021-07-01"  # "after COVID" starts on this date (between = COVID 
 
 FIG1 = "OUTPUT/fig1_weekly_series.png"
 FIG2 = "OUTPUT/fig2_seasonal_profile.png"
-SUMMARY = "OUTPUT/eda_period_summary.csv"
 # -----------------------------------------------------------------------------
 
 # ---- Load data --------------------------------------------------------------
@@ -78,18 +76,6 @@ def period(d):
         return "COVID period"
     return "After COVID"
 weekly["period"] = weekly.index.map(period)
-
-# ---- Summary table ----------------------------------------------------------
-# Average weekly injuries in each period, plus the percent change before -> after
-order = ["Before COVID", "COVID period", "After COVID"]
-summary = weekly.groupby("period")[list(groups)].mean().reindex(order).round(1)
-summary.loc["% change (before -> after)"] = (
-    (summary.loc["After COVID"] / summary.loc["Before COVID"] - 1) * 100).round(1)
-summary.to_csv(SUMMARY)
-print(f"Data covers {weekly.index.min():%Y-%m-%d} to {weekly.index.max():%Y-%m-%d} ({len(weekly)} weeks)")
-print("\nAverage weekly injuries:")
-print(summary.to_string())
-
 colors = {"Pedestrians": "#2a6fdb", "Cyclists": "#e08a1e", "Motorists": "#4a9d5b"}
 
 # ---- Figure 1: weekly series with COVID shaded ------------------------------
@@ -131,4 +117,4 @@ fig.tight_layout()
 fig.savefig(FIG2, dpi=150)
 plt.close(fig)
 
-print(f"\nSaved {FIG1}, {FIG2}, and {SUMMARY}")
+print(f"\nSaved {FIG1} and {FIG2}")
