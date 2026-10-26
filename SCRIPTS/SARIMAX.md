@@ -92,18 +92,6 @@ checks rejected at the 5% level at either tested lag (12,52). These nominal test
 support the choice but do not prove independence or guarantee future coverage.
 Its mean interval width (92.11) was smaller than the earlier revision's (95.95).
 
-A separate interval check tested widening using only errors from earlier
-validation folds, starting after six folds (72 observations). For the earlier
-pedestrian model, widening eventually became unnecessary as coverage improved.
-No arbitrary multiplier was chosen to cover the known holdout misses. **Exported
-intervals remain raw nominal 80% model intervals.** The diagnostic widening rule
-is not applied to final forecasts and provides no time-series coverage guarantee.
-Reproduce that diagnostic with:
-
-```sh
-.venv/bin/python -B SCRIPTS/check_intervals.py
-```
-
 The motorist model stays unchanged. Its small exploratory validation gain from
 removing the constant was insufficient reason to change the approved model.
 All model choices were fixed before regenerating final forecasts.
