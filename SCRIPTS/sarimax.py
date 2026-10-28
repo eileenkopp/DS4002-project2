@@ -10,8 +10,12 @@ Input   : DATA/weekly_injuries_processed.csv
 Output  : folder set by --output (never overwrites an existing run)
 
 How to run: python SCRIPTS/sarimax.py --mode full --jobs 3 --output OUTPUT/my_run
+Modes   : smoke:    (default) one first-fold fit; writes smoke_<group>_candidate_0.csv
+          validate: all rolling-origin CV fits and scores; no final fits or forecasts.csv
+          full:     validation, then final fits and forecasts.csv (reproduces our results)
 Notes: Without options, the script runs only a quick test (--mode smoke).
        See SCRIPTS/SARIMAX.md for all options and details.
+       Smoke output goes to OUTPUT/sarimax/revised/smoke/ unless --output is given.
 """
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -198,7 +202,8 @@ def run(args):
         scores.append(score)
         print(f'{group} {name} fold={fold} MAE={score["mae"]} converged={diag["converged"]}', flush=True)
         save()
-
+              
+# Smoke mode: one first-fold fit (cyclists for revised, pedestrians for original). Writes a single 12-week forecast CSV; no scores or final fits.
     try:
         if args.mode == 'smoke':
             a, b = folds[0]
