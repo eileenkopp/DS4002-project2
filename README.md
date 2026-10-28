@@ -52,7 +52,6 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
         - full
             - best_orders.json
             - candidate_scores.csv
-            - comparison.csv
             - diagnostics.json
             - fold_scores.csv
             - forecasts.csv
