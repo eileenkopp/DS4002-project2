@@ -30,7 +30,6 @@ Model choices were fixed using pretest evidence before final forecasts were rege
 
 - full/forecasts.csv: revised forecast export in the existing evaluation schema.
 - full/validation_forecasts.csv: out-of-fold predictions and raw intervals.
-- full/comparison.csv: full-precision descriptive comparison generated during verification.
 - full/run.json, best_orders.json and diagnostics.json: configurations, versions and fit evidence.
 - ../investigation/: archived candidate comparison, follow-up plan, scores, interval checks and adoption decisions.
 
