@@ -203,7 +203,6 @@ def run(args):
         print(f'{group} {name} fold={fold} MAE={score["mae"]} converged={diag["converged"]}', flush=True)
         save()
               
-# Smoke mode: one first-fold fit (cyclists for revised, pedestrians for original). Writes a single 12-week forecast CSV; no scores or final fits.
     try:
         if args.mode == 'smoke':
             a, b = folds[0]
