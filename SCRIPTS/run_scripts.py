@@ -53,7 +53,7 @@ SARIMAX = "sarimax.py"        # cross-validated SARIMAX models and forecasts -> 
 parser = argparse.ArgumentParser(description="Run the full project in order.")
 parser.add_argument("--output", default=None, help="NEW folder for the SARIMAX results (relative to the project folder). Must not already exist. Default: OUTPUT/sarimax/rerun_<date>_<time>")
 parser.add_argument("--profile", choices=["revised", "original"], default="revised", help="SARIMAX model set: revised (default) or the original 3-candidate search")
-parser.add_argument("--mode", choices=["smoke", "benchmark", "validate", "full"], default="full", help="SARIMAX mode: smoke = quick test, validate = no forecasts, full = everything")
+parser.add_argument("--mode", choices=["smoke", "validate", "full"], default="full", help="SARIMAX mode: smoke = quick test, validate = no forecasts, full = everything")
 parser.add_argument("--jobs", type=int, choices=[1, 2, 3], default=3, help="how many SARIMAX validation fits run at the same time (use 1 on a slow computer)")
 args = parser.parse_args()
 
