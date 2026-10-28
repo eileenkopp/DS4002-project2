@@ -200,19 +200,16 @@ def run(args):
         save()
 
     try:
-        if args.mode in ('smoke', 'benchmark'):
+        if args.mode == 'smoke':
             a, b = folds[0]
-            smoke_group = 'cyclists' if args.profile == 'revised' else 'pedestrians'
-            groups = [smoke_group] if args.mode == 'smoke' or args.profile == 'original' else GROUPS
-            for group in groups:
-                indices = [0] if args.mode == 'smoke' else range(len(configs[group]))
-                for c in indices:
-                    pred, diag = fit_forecast(df.iloc[a], df.iloc[b][EXOG], group, configs[group][c], args.maxiter)
-                    diagnostics.append(dict(diag, group=group, candidate=c, candidate_name=configs[group][c]['name'], fold=0))
-                    print(json.dumps(diagnostics[-1]), flush=True)
-                    if pred is None or not diag['converged']:
-                        raise RuntimeError('Smoke/benchmark failed or did not converge; see diagnostics')
-                    pred.to_csv(args.output / f'benchmark_{group}_candidate_{c}.csv', index_label='week_ending')
+            group = 'cyclists' if args.profile == 'revised' else 'pedestrians'
+            c = 0
+            pred, diag = fit_forecast(df.iloc[a], df.iloc[b][EXOG], group, configs[group][c], args.maxiter)
+            diagnostics.append(dict(diag, group=group, candidate=c, candidate_name=configs[group][c]['name'], fold=0))
+            print(json.dumps(diagnostics[-1]), flush=True)
+            if pred is None or not diag['converged']:
+                raise RuntimeError('Smoke test failed or did not converge; see diagnostics')
+            pred.to_csv(args.output / f'smoke_{group}_candidate_{c}.csv', index_label='week_ending')
             metadata['status'] = 'complete'
             return
         tasks = [(group, c, fold, a, b) for group in GROUPS
@@ -287,7 +284,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', type=Path, default=ROOT / 'DATA/weekly_injuries_processed.csv')
     parser.add_argument('--output', type=Path, default=None)
-    parser.add_argument('--mode', choices=['smoke', 'benchmark', 'validate', 'full'], default='smoke')
+    parser.add_argument('--mode', choices=['smoke', 'validate', 'full'], default='smoke')
     parser.add_argument('--maxiter', type=int, default=200)
     parser.add_argument('--profile', choices=['original', 'revised'], default='revised')
     parser.add_argument('--jobs', type=int, choices=range(1, 4), default=1,

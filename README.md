@@ -105,7 +105,7 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
     - **Check `SCRIPTS/SARIMAX.md` to view all available commands**. There are a many ways that you can run the model that are too extensive to list in this summary portion, if you want to see how to run it in more detail check the file, otherwise just run it following the details provided above
     - Have the following arguments you can add onto the <python SCRIPTS/sarimax.py> command:
      1. <--profile __your_choice__>: "revised", "original" (SARIMAX model set: revised (default) or the original 3-candidate search)
-     2. <--mode __your_choice__>: "smoke", "benchmark", "validate", "full" (SARIMAX mode: smoke (default) = quick test, validate = no forecasts, full = everything; **use full to reproduce our results**)
+     2. <--mode __your_choice__>: "smoke", "validate", "full" (SARIMAX mode: smoke (default) = quick test, validate = no forecasts, full = everything; **use full to reproduce our results**)
      3. <--jobs __your_choice__>: 1, 2, 3 (how many SARIMAX validation fits run at the same time (use 1 on a slow computer), 1 is default)
      4. <--output ___output_dir__>: your output file name and location, remember **must be a new location**
     - Example command to reproduce our results: <python SCRIPTS/sarimax.py --profile revised --mode full --jobs 3 --output OUTPUT/my_run>
