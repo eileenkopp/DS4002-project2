@@ -49,6 +49,8 @@ An outline illustrating the hierarchy of folders and subfolders contained in you
             - forecasts.csv
             - run.json
             - validation_forecasts.csv
+        - smoke
+            - smoke_cyclists_candidate_0
   - stl
       - stl_summary.txt
       - info_summary
