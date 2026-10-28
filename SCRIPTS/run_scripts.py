@@ -36,7 +36,7 @@ from pathlib import Path
 # ---- Locations --------------------------------------------------------------
 # This file is in SCRIPTS/, so the project folder is one level up. All scripts are run
 # from the project root, because their file paths (DATA/..., OUTPUT/...) start there.
-# As described in the main README.md file, all files are run from the project root, including this one.
+# As described in the main README.md file, all files are run from the project root and only work when run in the project root, including this one.
 
 REQUIREMENTS = Path("requirements.txt")
 RAW_DATA =  Path("DATA/Motor_Vehicle_Collisions_-_Crashes_20261016.csv")
