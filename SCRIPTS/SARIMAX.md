@@ -34,8 +34,6 @@ The temporary session environment is `/private/tmp/ds4002-sarimax-venv`; create
 Modes:
 
 - `smoke`: one first-fold fit; cyclists for revised, pedestrians for original.
-- `benchmark`: first-fold fits for all revised group configurations, or the three
-  original candidates for pedestrians.
 - `validate`: all pretest CV fits and scores; no final fits or test forecasts.
 - `full`: validation followed by three final fits and 36 forecast rows.
 
